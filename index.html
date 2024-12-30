@@ -7,9 +7,13 @@
     <title>DevelopersPerHour</title>
     <link href="./css/tailwind.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com/2.2.19/tailwind.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
 </head>
 
 <body class="">
@@ -24,7 +28,6 @@
                             class="h-6 sm:h-10 cursor-pointer">
                     </a>
                 </div>
-
                 <!-- Right Section -->
                 <div class="flex items-center space-x-6">
                     <!-- Email and Phone Box -->
@@ -46,15 +49,12 @@
                             <span class="text-[#000]">+1 415-992-5493</span>
                         </a>
                     </div>
-
                     <!-- Quote Button -->
                     <div>
-                        <a
+                        <a id="openModal"
                             class="bg-[#f05a23] hover:bg-[#1d2538] text-white py-3 sm:px-3  px-2 text-[14px]  rounded-md cursor-pointer">
-                            Get A Quote
-                        </a>
+                            Get A Quote </a>
                     </div>
-
                     <!-- Mobile Menu Toggle -->
                     <div class="menu-toggle cursor-pointer">
                         <a class="flex flex-col space-y-2" onclick="toggleMenu()">
@@ -67,7 +67,6 @@
             </div>
         </div>
     </header>
-
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="menu bg-[#fffbf9] mt-[70px] sm:mt-[90px] ">
         <nav class=" ">
@@ -75,13 +74,12 @@
                 <div
                     class="w-full navigation-head flex flex-wrap items-center justify-between px-4 pb-4 border-b-[1px] border-[#33384a] ">
                     <!-- Logo Section -->
-                    <div class="w-full md:w-1/4 logo mb-4 md:mb-0">
+                    <div class="w-full md:w-1/4 logo mb-5 md:mb-0">
                         <a href="/">
                             <img src="https://developersperhour.dev/images/header/logo.webp" alt="logo"
                                 class="h-8 sm:h-10 cursor-pointer">
                         </a>
                     </div>
-
                     <!-- Navigation Section -->
                     <div
                         class="w-full  md:w-3/4 nav-head-right flex flex-col md:flex-row items-start md:items-center md:justify-between space-y-4 md:space-y-0 md:space-x-4">
@@ -121,110 +119,129 @@
                                 class="text-white text-center   text-2xl cursor-pointer font-bold">&times;</button>
                         </div>
                     </div>
-
                 </div>
-
-
                 <div class="menu-list px-4 py-6">
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                         <div class="menu-content-box">
-                            <button class="togglebtn  text-xl text-white px-4 py-2 mb-4">Hire
-                                Dedicated Team</button>
+                            <button class="togglebtn  text-xl text-white px-4 py-2 mb-4">Hire Dedicated Team</button>
                             <ul class="navigation-list space-y-2"
                                 style="border-left: solid 1px #454754; padding-left: 16px;">
-                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
-                                        Android App
-                                        Developers</a></li>
-                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
-                                        iPhone App
-                                        Developers</a></li>
-                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
-                                        Hybrid
-                                        Developers</a></li>
-                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
-                                        Dedicated
-                                        Developers</a></li>
-                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Front
-                                        End
-                                        Developers</a></li>
-                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
-                                        Mobile App
-                                        Developers</a></li>
-                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
-                                        Flutter
-                                        Developers</a></li>
+                                <li>
+                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Android
+                                        App Developers</a>
+                                </li>
+                                <li>
+                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire iPhone
+                                        App Developers</a>
+                                </li>
+                                <li>
+                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Hybrid
+                                        Developers</a>
+                                </li>
+                                <li>
+                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Dedicated
+                                        Developers</a>
+                                </li>
+                                <li>
+                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Front End
+                                        Developers</a>
+                                </li>
+                                <li>
+                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Mobile
+                                        App Developers</a>
+                                </li>
+                                <li>
+                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Flutter
+                                        Developers</a>
+                                </li>
                             </ul>
                         </div>
-
                         <div class="menu-content-box">
                             <ul class="navigation-list space-y-2"
                                 style="border-left: solid 1px #454754; padding-left: 16px;">
-                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire React
-                                        Native App
-                                        Developers</a></li>
-                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
-                                        eCommerce App
-                                        Developers</a></li>
-                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Web
+                                <li>
+                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire React
+                                        Native App Developers</a>
+                                </li>
+                                <li>
+                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire eCommerce
+                                        App Developers</a>
+                                </li>
+                                <li>
+                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Web
                                         Developers</a>
                                 </li>
-                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Full
-                                        Stack
-                                        Developers</a></li>
-                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">IT
-                                        Staffing Solutions</a>
+                                <li>
+                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Full
+                                        Stack Developers</a>
                                 </li>
-                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
-                                        Software
-                                        Developers</a></li>
-                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
-                                        Xamarin
-                                        Developers</a></li>
-                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
-                                        Mobile App
-                                        Designers</a></li>
+                                <li>
+                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">IT Staffing
+                                        Solutions</a>
+                                </li>
+                                <li>
+                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Software
+                                        Developers</a>
+                                </li>
+                                <li>
+                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Xamarin
+                                        Developers</a>
+                                </li>
+                                <li>
+                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Mobile
+                                        App Designers</a>
+                                </li>
                             </ul>
                         </div>
-
                         <div class="menu-content-box">
                             <ul class="navigation-list space-y-2"
                                 style="border-left: solid 1px #454754; padding-left: 16px;">
-                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
-                                        Python
-                                        Developers</a></li>
-                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire PHP
+                                <li>
+                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Python
                                         Developers</a>
                                 </li>
-                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Dot
-                                        Net
-                                        Developers</a></li>
-                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
-                                        Offshore
-                                        Developers</a></li>
-                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
-                                        Node.JS
-                                        Developers</a></li>
-                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
-                                        Indian
-                                        Developers</a></li>
-                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire On
-                                        Demand App
-                                        Developers</a></li>
+                                <li>
+                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire PHP
+                                        Developers</a>
+                                </li>
+                                <li>
+                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Dot Net
+                                        Developers</a>
+                                </li>
+                                <li>
+                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Offshore
+                                        Developers</a>
+                                </li>
+                                <li>
+                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Node.JS
+                                        Developers</a>
+                                </li>
+                                <li>
+                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Indian
+                                        Developers</a>
+                                </li>
+                                <li>
+                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire On Demand
+                                        App Developers</a>
+                                </li>
                             </ul>
                         </div>
-
                         <div class="menu-content-box">
                             <button class="togglebtn  px-4 py-2 text-xl text-white mb-4">Company</button>
                             <ul class="navigation-list space-y-2"
                                 style="border-left: solid 1px #454754; padding-left: 16px;">
-                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Award</a>
+                                <li>
+                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Award</a>
                                 </li>
-                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">FAQ</a>
+                                <li>
+                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">FAQ</a>
                                 </li>
-                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">About
-                                        Us</a></li>
-                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Contact
-                                        Us</a></li>
+                                <li>
+                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">About Us</a>
+                                </li>
+                                <li>
+                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Contact Us</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -233,40 +250,31 @@
         </nav>
     </div>
     <!-- Header Section End -->
-
     <!-- Main Section Start -->
     <section class="banner-section relative bg-[#fffbf9] py-12 ">
         <div class="container mx-auto px-4">
-            <div class="flex flex-wrap items-center"> <!-- Added items-center to vertically center the content -->
+            <div class="flex flex-wrap items-center">
+                <!-- Added items-center to vertically center the content -->
                 <!-- Left Section -->
                 <div class="w-full md:w-1/2 banner-section-left">
                     <div class="banner-content-box relative z-10">
                         <h1
                             class="text-3xl mt-10 sm:mt-0 text-center sm:text-left sm:text-4xl font-bold text-[#2d353f] leading-tight mb-4">
-                            Hire Skilled &amp; Dedicated Team of Developers!
-                        </h1>
-                        <p class="text-[#2d353f] mb-6 text-center sm:text-left">
-                            Get access to a pool of dedicated developers, creative designers, and experienced testers
-                            all at one place.
-                        </p>
+                            Hire Skilled &amp; Dedicated Team of Developers! </h1>
+                        <p class="text-[#2d353f] mb-6 text-center sm:text-left"> Get access to a pool of dedicated
+                            developers, creative designers, and experienced testers all at one place. </p>
                     </div>
                     <div class="request-quote-btn flex flex-wrap justify-center sm:justify-start gap-4">
                         <a
                             class="btn bg-[#ff5c2b] text-white py-1 sm:py-3  px-4 sm:px-6 rounded-md text-lg sm:text-base text-[14px] hover:bg-[#f05a23]  ">
-                            Talk to Experts
-                        </a>
+                            Talk to Experts </a>
                         <a
                             class="btn  border-2 border-[#ff5c2b] text-[#ff5c2b] py-1 sm:py-3 px-4   sm:px-6  rounded-md text-lg sm:text-base text-[14px] hover:bg-[#ff5c2b] hover:text-white">
-                            Hire Developers
-                        </a>
+                            Hire Developers </a>
                         <a
                             class="btn border-2 border-[#ff5c2b] text-[#ff5c2b] py-1 sm:py-3  px-2 sm:px-6  rounded-md text-lg sm:text-base text-[14px] hover:bg-[#ff5c2b] hover:text-white ">
-                            Request A Quote
-                        </a>
+                            Request A Quote </a>
                     </div>
-
-
-
                 </div>
                 <!-- Right Section -->
                 <div class="w-full md:w-1/2 banner-section-right relative">
@@ -279,14 +287,12 @@
         </div>
     </section>
     <!-- Main Section End -->
-
     <!-- Service Section Start -->
     <section class="service_section py-8 bg-[#fffbf9]">
         <div class="container mx-auto px-4">
             <div class="section_head text-center mb-8">
-                <h3 class="text-2xl md:text-3xl font-bold mb-3 relative">
-                    Services We Offer
-                    <span class="block h-1 w-20 bg-blue-500 mx-auto mt-2"></span>
+                <h3 class="text-2xl md:text-3xl font-bold mb-3 relative"> Services We Offer <span
+                        class="block h-1 w-20 bg-blue-500 mx-auto mt-2"></span>
                 </h3>
                 <p class="text-gray-600">Your One-stop Solution to Meet Your Business Vision and Mission</p>
             </div>
@@ -297,76 +303,67 @@
                     <div class="flex justify-center mb-4">
                         <img class="h-20 w-20" src="images/software-development.png" alt="software-development">
                     </div>
-                    <p class="text-center font-medium">Software <br>Development</p>
+                    <p class="text-center font-medium">Software <br>Development </p>
                 </a>
-
                 <a href="https://www.octalsoftware.com/mobile-app-development"
                     class="block bg-white rounded-lg shadow-lg p-4 hover:shadow-xl transform hover:-translate-y-2 transition duration-300">
                     <div class="flex justify-center mb-4">
                         <img class="h-20 w-20" src="images/development.png" alt="app-development">
                     </div>
-                    <p class="text-center font-medium">App <br>Development</p>
+                    <p class="text-center font-medium">App <br>Development </p>
                 </a>
-
                 <a href="https://www.octalsoftware.com/web-development-services"
                     class="block bg-white rounded-lg shadow-lg p-4 hover:shadow-xl transform hover:-translate-y-2 transition duration-300">
                     <div class="flex justify-center mb-4">
                         <img class="h-20 w-20" src="images/web-programming.png" alt="web-development">
                     </div>
-                    <p class="text-center font-medium">Web <br>Development</p>
+                    <p class="text-center font-medium">Web <br>Development </p>
                 </a>
-
                 <a href="https://www.octalsoftware.com/mobile-web-design"
                     class="block bg-white rounded-lg shadow-lg p-4 hover:shadow-xl transform hover:-translate-y-2 transition duration-300">
                     <div class="flex justify-center mb-4">
                         <img class="h-20 w-20" src="images/thinking.png" alt="thinking-development">
                     </div>
-                    <p class="text-center font-medium">Design <br>Solutions</p>
+                    <p class="text-center font-medium">Design <br>Solutions </p>
                 </a>
-
                 <a href="https://www.octalsoftware.com/ecommerce-app-development"
                     class="block bg-white rounded-lg shadow-lg p-4 hover:shadow-xl transform hover:-translate-y-2 transition duration-300">
                     <div class="flex justify-center mb-4">
                         <img class="h-20 w-20" src="images/shopping.png" alt="shopping-development">
                     </div>
-                    <p class="text-center font-medium">Ecommerce <br>Solutions</p>
+                    <p class="text-center font-medium">Ecommerce <br>Solutions </p>
                 </a>
-
                 <a href="https://www.octalsoftware.com/quality-commitment"
                     class="block bg-white rounded-lg shadow-lg p-4 hover:shadow-xl transform hover:-translate-y-2 transition duration-300">
                     <div class="flex justify-center mb-4">
                         <img class="h-20 w-20" src="images/qa.png" alt="qa-development">
                     </div>
-                    <p class="text-center font-medium">QA <br>Solutions</p>
+                    <p class="text-center font-medium">QA <br>Solutions </p>
                 </a>
-
                 <a href="https://www.octalsoftware.com/software-consulting"
                     class="block bg-white rounded-lg shadow-lg p-4 hover:shadow-xl transform hover:-translate-y-2 transition duration-300">
                     <div class="flex justify-center mb-4">
                         <img class="h-20 w-20" src="images/shopping.png" alt="shopping-development">
                     </div>
-                    <p class="text-center font-medium">Managed IT <br>Services</p>
+                    <p class="text-center font-medium">Managed IT <br>Services </p>
                 </a>
-
                 <a href="https://www.octalsoftware.com/hire-dedicated-resources"
                     class="block bg-white rounded-lg shadow-lg p-4 hover:shadow-xl transform hover:-translate-y-2 transition duration-300">
                     <div class="flex justify-center mb-4">
                         <img class="h-20 w-20" src="images/platform.png" alt="platform-development">
                     </div>
-                    <p class="text-center font-medium">Remote <br>Team</p>
+                    <p class="text-center font-medium">Remote <br>Team </p>
                 </a>
             </div>
         </div>
     </section>
     <!-- Service Section End -->
-
     <!-- Technology Section Start -->
     <section class="technology_sec py-8 bg-[#fffbf9]" id="service_sectionscroll">
         <div class="container mx-auto px-4">
             <div class="section_head text-center mb-8">
-                <h3 class="text-2xl md:text-3xl font-bold mb-3 relative">
-                    Technologies We Root For
-                    <span class="block h-1 w-20 bg-blue-500 mx-auto mt-2"></span>
+                <h3 class="text-2xl md:text-3xl font-bold mb-3 relative"> Technologies We Root For <span
+                        class="block h-1 w-20 bg-blue-500 mx-auto mt-2"></span>
                 </h3>
                 <p class="text-gray-600">Your Business Partners to Navigate the Digital Landscape with Latest Technology
                 </p>
@@ -463,7 +460,6 @@
         </div>
     </section>
     <!-- Technology Section End -->
-
     <!-- Testimonial Section Start -->
     <section class="py-24 bg-[#fffbf9] ">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -499,13 +495,11 @@
                             </svg>
                         </button>
                     </div>
-
                 </div>
                 <div class="w-full lg:w-3/5">
                     <!--Slider wrapper-->
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
-
                             <div
                                 class="swiper-slide group bg-white border border-solid border-gray-300 rounded-2xl max-sm:max-w-sm max-sm:mx-auto p-6 transition-all duration-500 hover:border-indigo-600">
                                 <div class="flex items-center gap-5 mb-5 sm:mb-9">
@@ -552,9 +546,7 @@
                                 <p
                                     class="text-sm text-gray-500 leading-6 transition-all duration-500 min-h-24  group-hover:text-gray-800">
                                     The user interface of this pagedone is so intuitive, I was able to start using it
-                                    without any guidance.
-                                </p>
-
+                                    without any guidance. </p>
                             </div>
                             <div
                                 class="swiper-slide group bg-white border border-solid border-gray-300 rounded-2xl max-sm:max-w-sm max-sm:mx-auto p-6 transition-all duration-500 hover:border-indigo-600">
@@ -603,9 +595,7 @@
                                 <p
                                     class="text-sm text-gray-500 leading-6 transition-all duration-500 min-h-24 group-hover:text-gray-800">
                                     I used to dread doing my taxes every year, but pagedone has made the process so much
-                                    simpler and stress-free.
-                                </p>
-
+                                    simpler and stress-free. </p>
                             </div>
                             <div
                                 class="swiper-slide group bg-white border border-solid border-gray-300 rounded-2xl max-sm:max-w-sm max-sm:mx-auto p-6 transition-all duration-500 hover:border-indigo-600">
@@ -653,9 +643,7 @@
                                 <p
                                     class="text-sm text-gray-500 leading-6 transition-all duration-500 min-h-24 group-hover:text-gray-800">
                                     The user interface of this pagedone is so intuitive, I was able to start using it
-                                    without any guidance.
-                                </p>
-
+                                    without any guidance. </p>
                             </div>
                             <div
                                 class="swiper-slide group bg-white border border-solid border-gray-300 rounded-2xl max-sm:max-w-sm max-sm:mx-auto p-6 transition-all duration-500 hover:border-indigo-600">
@@ -704,9 +692,7 @@
                                 <p
                                     class="text-sm text-gray-500 leading-6 transition-all duration-500 min-h-24 group-hover:text-gray-800">
                                     I used to dread doing my taxes every year, but pagedone has made the process so much
-                                    simpler and stress-free.
-                                </p>
-
+                                    simpler and stress-free. </p>
                             </div>
                         </div>
                     </div>
@@ -715,15 +701,251 @@
         </div>
     </section>
     <!-- Testimonial Section End -->
+    <!-- Contact Section Start -->
+    <div id="contact_sec" class="my-4 py-4 ">
+        <div class="container mx-auto px-4">
+            <!-- Section Header -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-semibold">Let’s Build Something Great Together!</h2>
+                <p class="text-lg">Connect with us and discover new possibilities.</p>
+            </div>
+            <div class="flex flex-col md:flex-row py-4 gap-5 justify-between">
+                <!-- Left Section (30%) -->
+                <div class="w-full md:w-[30%] shadow-lg bg-white rounded-md px-3 py-4">
+                    <!-- Logo -->
+                    <a class="flex justify-center items-center">
+                        <img class="w-32 h-auto"
+                            src="https://cdn-gnapb.nitrocdn.com/rVKsFrUUJpBqwSXDQLTtMASMDgzFisXl/assets/images/source/rev-a5b0af6/www.octalsoftware.com/wp-content/themes/octal/images/common/logo.svg"
+                            alt="Octal IT Solution">
+                    </a>
+                    <!-- Social Media Links -->
+                    <div class="flex gap-4 justify-center mb-6">
+                        <a href="https://www.facebook.com/octalsoftware" target="_blank"
+                            class="text-white hover:text-orange-500">
+                            <img src="https://cdn-gnapb.nitrocdn.com/rVKsFrUUJpBqwSXDQLTtMASMDgzFisXl/assets/images/optimized/rev-a5b0af6/www.octalsoftware.com/wp-content/uploads/2023/05/facebook.svg"
+                                alt="Facebook" class="w-8 h-8">
+                        </a>
+                        <a href="https://www.linkedin.com/company/octal-info-solution-pvt-ltd/" target="_blank"
+                            class="text-white hover:text-orange-500">
+                            <img src="https://cdn-gnapb.nitrocdn.com/rVKsFrUUJpBqwSXDQLTtMASMDgzFisXl/assets/images/optimized/rev-a5b0af6/www.octalsoftware.com/wp-content/uploads/2023/05/linkedin.svg"
+                                alt="LinkedIn" class="w-8 h-8">
+                        </a>
+                        <a href="https://www.youtube.com/user/Octalinfosolution" target="_blank"
+                            class="text-white hover:text-orange-500">
+                            <img src="https://cdn-gnapb.nitrocdn.com/rVKsFrUUJpBqwSXDQLTtMASMDgzFisXl/assets/images/optimized/rev-a5b0af6/www.octalsoftware.com/wp-content/uploads/2023/05/youtube.svg"
+                                alt="YouTube" class="w-8 h-8">
+                        </a>
+                        <a href="https://twitter.com/Octalitsolution" target="_blank"
+                            class="text-white hover:text-orange-500">
+                            <img src="https://cdn-gnapb.nitrocdn.com/rVKsFrUUJpBqwSXDQLTtMASMDgzFisXl/assets/images/optimized/rev-a5b0af6/www.octalsoftware.com/wp-content/uploads/2023/05/twitter.svg"
+                                alt="Twitter" class="w-8 h-8">
+                        </a>
+                        <a href="https://www.instagram.com/octalitsolution_official/" target="_blank"
+                            class="text-white hover:text-orange-500">
+                            <img src="https://cdn-gnapb.nitrocdn.com/rVKsFrUUJpBqwSXDQLTtMASMDgzFisXl/assets/images/source/rev-a5b0af6/www.octalsoftware.com/wp-content/uploads/2023/06/Instagram_logo_2016-01.svg"
+                                alt="Instagram" class="w-8 h-8">
+                        </a>
+                    </div>
+                    <!-- Contact Info -->
+                    <div class="text-center mb-6">
+                        <div class="flex items-center justify-center mb-4">
+                            <i class="sprite2 mail text-2xl text-orange-500 mr-4"></i>
+                            <p class="font-semibold">Mail to our Sales Department <a
+                                    href="mailto:enquiry@octalsoftware.com"
+                                    class="text-[#000]">enquiry@octalsoftware.com</a></p>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <i class="sprite2 skype text-2xl text-orange-500 mr-4"></i>
+                            <p class="font-semibold">Our Skype ID <a href="skype:octal.software"
+                                    class="text-[#000]">skype:octal.software</a></p>
+                        </div>
+                    </div>
+                    <!-- Rating -->
+                    <div class="text-center">
+                        <img src="https://cdn-gnapb.nitrocdn.com/rVKsFrUUJpBqwSXDQLTtMASMDgzFisXl/assets/images/optimized/rev-a5b0af6/www.octalsoftware.com/wp-content/themes/octal/images/common/rating.svg"
+                            alt="rating icon" class="mx-auto mb-4">
+                        <h3 class="text-[#000] text-center text-lg">by 700+ clients for 1500+ Web and Mobile App
+                            projects.</h3>
+                    </div>
+                </div>
+                <!-- Right Section (70%) -->
+                <div class="w-full md:w-[65%] px-5 shadow-lg bg-white rounded-md  py-4">
+                    <form class="bg-white p-6 rounded-lg">
+                        <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-4 mb-5">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                                <input type="text" name="name" id="name" placeholder="John Smith"
+                                    class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                                <input type="email" name="email" id="email" placeholder="John@gmail.com"
+                                    class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500">
+                            </div>
+                        </div>
+                        <div class="w-full flex flex-col md:flex-row gap-4 mb-5">
+                            <div class="flex-1">
+                                <label for="countrycode" class="block text-sm font-medium text-gray-700">Phone
+                                    Number</label>
+                                <div class="flex gap-4 w-full">
+                                    <select id="countrycode"
+                                        class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500">
+                                        <option value="" selected>Select Country</option>
+                                        <option value="+1">United States (+1)</option>
+                                        <option value="+91">India (+91)</option>
+                                        <option value="+44">United Kingdom (+44)</option>
+                                        <option value="+61">Australia (+61)</option>
+                                        <option value="+81">Japan (+81)</option>
+                                    </select>
+                                    <div class="mt-4 md:mt-0">
+                                        <input type="tel" name="tel-58" placeholder="99999-99999"
+                                            class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500"
+                                            required />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <label for="budget" class="block text-sm font-medium text-gray-700">Project Budget (in
+                                    USD)</label>
+                                <select name="budget" id="budget"
+                                    class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500">
+                                    <option>Project Budget (in USD)</option>
+                                    <option value="5000 to 10,000">5000 to 10,000</option>
+                                    <option value="10,000 to 20,000">10,000 to 20,000</option>
+                                    <option value="20,000 to 30,000">20,000 to 30,000</option>
+                                    <option value="30,000 to 50,000">30,000 to 50,000</option>
+                                    <option value="Above 50,000">Above 50,000</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-5">
+                            <label for="project" class="block text-sm font-medium text-gray-700">About Your
+                                Project</label>
+                            <textarea name="project" id="project" placeholder="Describe Your Project Requirement"
+                                rows="4"
+                                class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500"></textarea>
+                        </div>
+                        <div class="text-white">
+                            <button
+                                class="px-4 py-3 text-[#ffffff] bg-[#ff5c2b] shadow-lg font-semibold rounded-md">Send
+                                your Inquiry</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Section End -->
 
-    <!-- <div class="christmasTagBox z-50 h-50 w-50">
-        <a href="https://devtechnosys.com/christmas-offers.php">
-          <img class="lazyload  animate-pulse	 h-50 w-40" src="https://devtechnosys.com/images/2021-new/christmas/christmas.png" alt="christmas">
-        </a>
-      </div> -->
+    <!-- Modal Structure -->
 
+    <div id="quoteModal" 
+        class="fixed  .modal-content
+        z-50 inset-0 bg-black bg-opacity-50 top-0 left-0 w-full h-full flex justify-center items-center hidden">
+        <div class="bg-white px-8 py-6 rounded-lg shadow-lg w-full max-w-4xl">
+            <div class="flex justify-end items-center mb-2 ">
+                <button id="closeModal" class="text-xl text-gray-500">X</button>
+            </div>
 
+            <!-- Modal Content (Left and Right Sections) -->
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Left Section (Awards and Carousel) -->
+                <div class="flex flex-col px-[40px] justify-center bg-[#070606] rounded-lg">
+                    <div class="text-center text-white md:text-left">
+                        <h2 class="text-3xl font-semibold mb-4 mt-5">Request a Quote and Save on Next Purchase!</h2>
+                        <p class="text-sm text-[#dadada] mb-6">Are you looking for an affordable solution for your
+                            business needs? Look no further than our top products and services!</p>
+                    </div>
+
+                    <!-- Awards Section -->
+                    <div class="mb-8 text-white">
+                        <h3 class="text-2xl font-semibold mb-4">Awards</h3>
+                        <ul class="flex justify-center md:justify-start gap-4">
+                            <li><img src="https://developersperhour.dev/images/hire-developers-2023/award-img-1.png"
+                                    alt="Award 1" class="w-20 h-20 object-contain"></li>
+                            <li><img src="https://developersperhour.dev/images/hire-developers-2023/award-img-2.png"
+                                    alt="Award 2" class="w-20 h-20 object-contain"></li>
+                            <li><img src="https://developersperhour.dev/images/hire-developers-2023/award-img-3.png"
+                                    alt="Award 3" class="w-20 h-20 object-contain"></li>
+                        </ul>
+                    </div>
+
+                    <!-- Carousel Section -->
+                    <div class="owl-carousel owl-theme">
+                        <!-- Add Owl Carousel content here -->
+                    </div>
+                </div>
+
+                <!-- Right Section (Form) -->
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h2 class="text-2xl font-semibold mb-6 text-center">Build A Positive Relationship With A Successful
+                        Outcome.</h2>
+
+                    <form id="validateForm" action="submit.php" enctype="multipart/form-data">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <!-- Name and Email -->
+                            <div class="form-group">
+                                <label class="block text-sm font-medium mb-2">Name</label>
+                                <input type="text" class="form-input w-full px-4 py-2 border rounded-md"
+                                    placeholder="Enter Name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="block text-sm font-medium mb-2">Email</label>
+                                <input type="email" class="form-input w-full px-4 py-2 border rounded-md"
+                                    placeholder="Enter Email" name="email" required>
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6 mt-6">
+                            <!-- Location and Phone Number -->
+                            <div class="form-group">
+                                <label class="block text-sm font-medium mb-2">Location</label>
+                                <input type="text" class="form-input w-full px-4 py-2 border rounded-md"
+                                    placeholder="Enter Location" name="location">
+                            </div>
+                            <div class="form-group">
+                                <label class="block text-sm font-medium mb-2">Phone Number</label>
+                                <input type="tel" class="form-input w-full px-4 py-2 border rounded-md"
+                                    placeholder="Enter Phone Number" name="phonenumber">
+                            </div>
+                        </div>
+
+                        <div class="mt-6">
+                            <!-- File Upload -->
+                            <label class="block text-sm font-medium mb-2">Upload File</label>
+                            <div class="file-upload-wrapper mb-6">
+                                <input name="file-upload-field" type="file"
+                                    class="file-upload-field w-full px-4 py-2 border rounded-md"
+                                    placeholder="Upload File">
+                            </div>
+                        </div>
+
+                        <!-- Description -->
+                        <div class="form-group">
+                            <label class="block text-sm font-medium mb-2">Description</label>
+                            <textarea class="form-input w-full px-4 py-2 border rounded-md"
+                                placeholder="Enter Description" name="msg" required></textarea>
+                        </div>
+
+                        <!-- Google reCAPTCHA -->
+                        <div class="g-recaptcha mt-6" data-sitekey="your-site-key"></div>
+
+                        <div class="form-submit-btn mt-6 text-left">
+                            <button type="submit"
+                                class="btn bg-[#ff5c2b] text-white px-6 py-3 rounded-md focus:outline-none">Submit</button>
+                            <div class="loader hidden mt-4">
+                                <img src="images/loader.gif" alt="Loading...">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Include Tailwind CSS via CDN -->
+    <!-- <div class="christmasTagBox z-50 h-50 w-50"><a href="https://devtechnosys.com/christmas-offers.php"><img class="lazyload  animate-pulse	 h-50 w-40" src="https://devtechnosys.com/images/2021-new/christmas/christmas.png" alt="christmas"></a></div> -->
     <script src="./js/script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </body>
 
 </html>

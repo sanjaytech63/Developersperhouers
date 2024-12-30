@@ -59,5 +59,38 @@
     top: 150px;
     right: 10px;
     animation: move 1s infinite alternate;
-  }
-  
+}
+
+
+.octal-img {
+    width: 275px;
+    height: 100px;
+    object-fit: fill;
+
+}
+
+ /* Optional smooth transition for modal */
+ #quoteModal {
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#quoteModal:not(.hidden) {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Smooth scrolling for modal content */
+.modal-content {
+    max-height: 80vh; /* Ensure the modal doesn't exceed 80% of the viewport height */
+    overflow-y: auto; /* Enable vertical scrolling if the content overflows */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS devices */
+}
+
+/* Optional: Adding padding for mobile */
+@media (max-width: 768px) {
+    .modal-content {
+        padding: 16px;
+    }
+}
