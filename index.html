@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevelopersPerHour</title>
+    <link href="./css/tailwind.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</head>
+
+<body class="">
+    <!-- Header Section Start -->
+    <header class="bg-[#fffbf9] text-white fixed top-0 left-0 w-full z-50 shadow-md">
+        <div class="container mx-auto px-2">
+            <div class="flex justify-between items-center py-6">
+                <!-- Logo Section -->
+                <div class="logo">
+                    <a href="/">
+                        <img src="https://developersperhour.dev/images/header/logo-dark.webp" alt="logo"
+                            class="h-6 sm:h-10 cursor-pointer">
+                    </a>
+                </div>
+
+                <!-- Right Section -->
+                <div class="flex items-center space-x-6">
+                    <!-- Email and Phone Box -->
+                    <div class="hidden lg:flex space-x-4">
+                        <a href="https://wa.me/919983263662?text=Hello DevelopersPerHour" target="_blank"
+                            title="91-9983263662"
+                            class="flex items-center space-x-2 text-gray-300 hover:text-white cursor-pointer">
+                            <img src="https://developersperhour.dev/images/header/whatsapp.svg" alt="whatsapp"
+                                class="h-10 w-10 object-cover">
+                        </a>
+                        <a
+                            class="flex items-center space-x-2 text-gray-300 hover:text-white  border-[1px] border-[#e8e8e8] px-3 py-2 cursor-pointer">
+                            <img src="https://developersperhour.dev/images/header/mail.svg" alt="mail" class="h-5 w-5">
+                            <span class="text-[#000]">info@developersperhour.dev</span>
+                        </a>
+                        <a
+                            class="flex items-center space-x-2 text-gray-300 hover:text-white border-[1px] border-[#e8e8e8] px-3 py-2 cursor-pointer">
+                            <img src="https://developersperhour.dev/images/header/call.svg" alt="call" class="h-5 w-5">
+                            <span class="text-[#000]">+1 415-992-5493</span>
+                        </a>
+                    </div>
+
+                    <!-- Quote Button -->
+                    <div>
+                        <a
+                            class="bg-[#f05a23] hover:bg-[#1d2538] text-white py-3 sm:px-3  px-2 text-[14px]  rounded-md cursor-pointer">
+                            Get A Quote
+                        </a>
+                    </div>
+
+                    <!-- Mobile Menu Toggle -->
+                    <div class="menu-toggle cursor-pointer">
+                        <a class="flex flex-col space-y-2" onclick="toggleMenu()">
+                            <span class="block h-1 w-8 bg-[#1d2538]"></span>
+                            <span class="block h-1 w-8 bg-[#1d2538]"></span>
+                            <span class="block h-1 w-8 bg-[#1d2538]"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="menu bg-[#fffbf9] mt-[70px] sm:mt-[90px] ">
+        <nav class=" ">
+            <div class="menu-content-bg bg-[#202336] shadow-lg py-4">
+                <div
+                    class="w-full navigation-head flex flex-wrap items-center justify-between px-4 pb-4 border-b-[1px] border-[#33384a] ">
+                    <!-- Logo Section -->
+                    <div class="w-full md:w-1/4 logo mb-4 md:mb-0">
+                        <a href="/">
+                            <img src="https://developersperhour.dev/images/header/logo.webp" alt="logo"
+                                class="h-8 sm:h-10 cursor-pointer">
+                        </a>
+                    </div>
+
+                    <!-- Navigation Section -->
+                    <div
+                        class="w-full  md:w-3/4 nav-head-right flex flex-col md:flex-row items-start md:items-center md:justify-between space-y-4 md:space-y-0 md:space-x-4">
+                        <ul class="flex flex-col md:flex-row md:flex-wrap space-y-4 md:space-y-0 md:space-x-4">
+                            <li>
+                                <a class="flex gap-4 items-center text-white">
+                                    <i
+                                        class="w-[35px] h-[35px] border-[1px] border-gray-500 rounded-full flex items-center justify-center">🥇</i>
+                                    <span>Blog</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="flex gap-4 items-center text-white">
+                                    <i
+                                        class="w-[35px] h-[35px] border-[1px] border-gray-500 rounded-full flex items-center justify-center">☎</i>
+                                    <span>+1 415-992-5493</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="flex gap-4 items-center text-white">
+                                    <i
+                                        class="w-[35px] h-[35px] border-[1px] border-gray-500 rounded-full flex items-center justify-center">✉</i>
+                                    <span>info@developersperhour.dev</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="flex gap-4 items-center text-white">
+                                    <i
+                                        class="w-[35px] h-[35px] border-[1px] border-gray-500 rounded-full flex items-center justify-center">📝</i>
+                                    <span>Request A Quote</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div
+                            class="w-[35px] h-[35px] border-[1px] border-gray-500 rounded-full flex items-center justify-center">
+                            <button onclick="toggleMenu()"
+                                class="text-white text-center   text-2xl cursor-pointer font-bold">&times;</button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="menu-list px-4 py-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                        <div class="menu-content-box">
+                            <button class="togglebtn  text-xl text-white px-4 py-2 mb-4">Hire
+                                Dedicated Team</button>
+                            <ul class="navigation-list space-y-2"
+                                style="border-left: solid 1px #454754; padding-left: 16px;">
+                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
+                                        Android App
+                                        Developers</a></li>
+                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
+                                        iPhone App
+                                        Developers</a></li>
+                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
+                                        Hybrid
+                                        Developers</a></li>
+                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
+                                        Dedicated
+                                        Developers</a></li>
+                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Front
+                                        End
+                                        Developers</a></li>
+                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
+                                        Mobile App
+                                        Developers</a></li>
+                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
+                                        Flutter
+                                        Developers</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="menu-content-box">
+                            <ul class="navigation-list space-y-2"
+                                style="border-left: solid 1px #454754; padding-left: 16px;">
+                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire React
+                                        Native App
+                                        Developers</a></li>
+                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
+                                        eCommerce App
+                                        Developers</a></li>
+                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Web
+                                        Developers</a>
+                                </li>
+                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Full
+                                        Stack
+                                        Developers</a></li>
+                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">IT
+                                        Staffing Solutions</a>
+                                </li>
+                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
+                                        Software
+                                        Developers</a></li>
+                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
+                                        Xamarin
+                                        Developers</a></li>
+                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
+                                        Mobile App
+                                        Designers</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="menu-content-box">
+                            <ul class="navigation-list space-y-2"
+                                style="border-left: solid 1px #454754; padding-left: 16px;">
+                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
+                                        Python
+                                        Developers</a></li>
+                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire PHP
+                                        Developers</a>
+                                </li>
+                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Dot
+                                        Net
+                                        Developers</a></li>
+                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
+                                        Offshore
+                                        Developers</a></li>
+                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
+                                        Node.JS
+                                        Developers</a></li>
+                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
+                                        Indian
+                                        Developers</a></li>
+                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire On
+                                        Demand App
+                                        Developers</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="menu-content-box">
+                            <button class="togglebtn  px-4 py-2 text-xl text-white mb-4">Company</button>
+                            <ul class="navigation-list space-y-2"
+                                style="border-left: solid 1px #454754; padding-left: 16px;">
+                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Award</a>
+                                </li>
+                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">FAQ</a>
+                                </li>
+                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">About
+                                        Us</a></li>
+                                <li><a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Contact
+                                        Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Header Section End -->
+
+    <!-- Main Section Start -->
+    <section class="banner-section relative bg-[#fffbf9] py-12 ">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap items-center"> <!-- Added items-center to vertically center the content -->
+                <!-- Left Section -->
+                <div class="w-full md:w-1/2 banner-section-left">
+                    <div class="banner-content-box relative z-10">
+                        <h1
+                            class="text-3xl mt-10 sm:mt-0 text-center sm:text-left sm:text-4xl font-bold text-[#2d353f] leading-tight mb-4">
+                            Hire Skilled &amp; Dedicated Team of Developers!
+                        </h1>
+                        <p class="text-[#2d353f] mb-6 text-center sm:text-left">
+                            Get access to a pool of dedicated developers, creative designers, and experienced testers
+                            all at one place.
+                        </p>
+                    </div>
+                    <div class="request-quote-btn flex flex-wrap justify-center sm:justify-start gap-4">
+                        <a
+                            class="btn bg-[#ff5c2b] text-white py-1 sm:py-3  px-4 sm:px-6 rounded-md text-lg sm:text-base text-[14px] hover:bg-[#f05a23]  ">
+                            Talk to Experts
+                        </a>
+                        <a
+                            class="btn  border-2 border-[#ff5c2b] text-[#ff5c2b] py-1 sm:py-3 px-4   sm:px-6  rounded-md text-lg sm:text-base text-[14px] hover:bg-[#ff5c2b] hover:text-white">
+                            Hire Developers
+                        </a>
+                        <a
+                            class="btn border-2 border-[#ff5c2b] text-[#ff5c2b] py-1 sm:py-3  px-2 sm:px-6  rounded-md text-lg sm:text-base text-[14px] hover:bg-[#ff5c2b] hover:text-white ">
+                            Request A Quote
+                        </a>
+                    </div>
+
+
+
+                </div>
+                <!-- Right Section -->
+                <div class="w-full md:w-1/2 banner-section-right relative">
+                    <div class="banner-ger relative">
+                        <img src="https://developersperhour.dev/images/index/2023/banner-img.png" alt="banner-img"
+                            class="w-full h-auto object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Main Section End -->
+
+    <!-- Service Section Start -->
+    <section class="service_section py-8 bg-[#fffbf9]">
+        <div class="container mx-auto px-4">
+            <div class="section_head text-center mb-8">
+                <h3 class="text-2xl md:text-3xl font-bold mb-3 relative">
+                    Services We Offer
+                    <span class="block h-1 w-20 bg-blue-500 mx-auto mt-2"></span>
+                </h3>
+                <p class="text-gray-600">Your One-stop Solution to Meet Your Business Vision and Mission</p>
+            </div>
+            <div class="service_ctg grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+                <!-- Service Items -->
+                <a href="https://www.octalsoftware.com/software-consulting"
+                    class="block bg-white rounded-lg shadow-lg p-4 hover:shadow-xl transform hover:-translate-y-2 transition duration-300">
+                    <div class="flex justify-center mb-4">
+                        <img class="h-20 w-20" src="images/software-development.png" alt="software-development">
+                    </div>
+                    <p class="text-center font-medium">Software <br>Development</p>
+                </a>
+
+                <a href="https://www.octalsoftware.com/mobile-app-development"
+                    class="block bg-white rounded-lg shadow-lg p-4 hover:shadow-xl transform hover:-translate-y-2 transition duration-300">
+                    <div class="flex justify-center mb-4">
+                        <img class="h-20 w-20" src="images/development.png" alt="app-development">
+                    </div>
+                    <p class="text-center font-medium">App <br>Development</p>
+                </a>
+
+                <a href="https://www.octalsoftware.com/web-development-services"
+                    class="block bg-white rounded-lg shadow-lg p-4 hover:shadow-xl transform hover:-translate-y-2 transition duration-300">
+                    <div class="flex justify-center mb-4">
+                        <img class="h-20 w-20" src="images/web-programming.png" alt="web-development">
+                    </div>
+                    <p class="text-center font-medium">Web <br>Development</p>
+                </a>
+
+                <a href="https://www.octalsoftware.com/mobile-web-design"
+                    class="block bg-white rounded-lg shadow-lg p-4 hover:shadow-xl transform hover:-translate-y-2 transition duration-300">
+                    <div class="flex justify-center mb-4">
+                        <img class="h-20 w-20" src="images/thinking.png" alt="thinking-development">
+                    </div>
+                    <p class="text-center font-medium">Design <br>Solutions</p>
+                </a>
+
+                <a href="https://www.octalsoftware.com/ecommerce-app-development"
+                    class="block bg-white rounded-lg shadow-lg p-4 hover:shadow-xl transform hover:-translate-y-2 transition duration-300">
+                    <div class="flex justify-center mb-4">
+                        <img class="h-20 w-20" src="images/shopping.png" alt="shopping-development">
+                    </div>
+                    <p class="text-center font-medium">Ecommerce <br>Solutions</p>
+                </a>
+
+                <a href="https://www.octalsoftware.com/quality-commitment"
+                    class="block bg-white rounded-lg shadow-lg p-4 hover:shadow-xl transform hover:-translate-y-2 transition duration-300">
+                    <div class="flex justify-center mb-4">
+                        <img class="h-20 w-20" src="images/qa.png" alt="qa-development">
+                    </div>
+                    <p class="text-center font-medium">QA <br>Solutions</p>
+                </a>
+
+                <a href="https://www.octalsoftware.com/software-consulting"
+                    class="block bg-white rounded-lg shadow-lg p-4 hover:shadow-xl transform hover:-translate-y-2 transition duration-300">
+                    <div class="flex justify-center mb-4">
+                        <img class="h-20 w-20" src="images/shopping.png" alt="shopping-development">
+                    </div>
+                    <p class="text-center font-medium">Managed IT <br>Services</p>
+                </a>
+
+                <a href="https://www.octalsoftware.com/hire-dedicated-resources"
+                    class="block bg-white rounded-lg shadow-lg p-4 hover:shadow-xl transform hover:-translate-y-2 transition duration-300">
+                    <div class="flex justify-center mb-4">
+                        <img class="h-20 w-20" src="images/platform.png" alt="platform-development">
+                    </div>
+                    <p class="text-center font-medium">Remote <br>Team</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Service Section End -->
+
+    <!-- Technology Section Start -->
+    <section class="technology_sec py-8 bg-[#fffbf9]" id="service_sectionscroll">
+        <div class="container mx-auto px-4">
+            <div class="section_head text-center mb-8">
+                <h3 class="text-2xl md:text-3xl font-bold mb-3 relative">
+                    Technologies We Root For
+                    <span class="block h-1 w-20 bg-blue-500 mx-auto mt-2"></span>
+                </h3>
+                <p class="text-gray-600">Your Business Partners to Navigate the Digital Landscape with Latest Technology
+                </p>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                <!-- Technology Items -->
+                <a href="https://www.octalsoftware.com/kotlin-development-company"
+                    class="block bg-white rounded-lg shadow-lg p-4 hover:shadow-xl transform hover:-translate-y-2 transition duration-300">
+                    <div class="flex justify-center mb-4">
+                        <img class=" object-cover	 h-20 w-20" src="images/Kotlin.png" alt="software-development">
+                    </div>
+                    <p class="text-center font-medium">Kotlin</p>
+                </a>
+                <a href="https://www.octalsoftware.com/ai-chatbot-development"
+                    class="block bg-white rounded-lg shadow-lg p-4 hover:shadow-xl transform hover:-translate-y-2 transition duration-300">
+                    <div class="flex justify-center mb-4">
+                        <img class=" object-cover	 h-20 w-20" src="images/ai.webp" alt="software-development">
+                    </div>
+                    <p class="text-center font-medium">AI/ML</p>
+                </a>
+                <a href="https://www.octalsoftware.com/swift-app-development"
+                    class="block bg-white rounded-lg shadow-lg p-4 hover:shadow-xl transform hover:-translate-y-2 transition duration-300">
+                    <div class="flex justify-center mb-4">
+                        <img class=" object-cover	 h-20 w-20" src="images/swift.svg" alt="software-development">
+                    </div>
+                    <p class="text-center font-medium">Swift</p>
+                </a>
+                <a href="https://www.octalsoftware.com/python-development-services"
+                    class="block bg-white rounded-lg shadow-lg p-4 hover:shadow-xl transform hover:-translate-y-2 transition duration-300">
+                    <div class="flex justify-center mb-4">
+                        <img class=" object-cover	 h-20 w-20" src="images/python.png" " alt=" software-development">
+                    </div>
+                    <p class="text-center font-medium">Python</p>
+                </a>
+                <a href="https://www.octalsoftware.com/blockchain-app-development"
+                    class="block bg-white rounded-lg shadow-lg p-4 hover:shadow-xl transform hover:-translate-y-2 transition duration-300">
+                    <div class="flex justify-center mb-4">
+                        <img class=" object-cover	 h-20 w-20" src="images/blockchain.webp" alt="software-development">
+                    </div>
+                    <p class="text-center font-medium">Blockchain</p>
+                </a>
+                <a href="https://www.octalsoftware.com/react-native-app-development"
+                    class="block bg-white rounded-lg shadow-lg p-4 hover:shadow-xl transform hover:-translate-y-2 transition duration-300">
+                    <div class="flex justify-center mb-4">
+                        <img class=" object-cover	 h-20 w-20" src="images/react-native.png" alt="software-development">
+                    </div>
+                    <p class="text-center font-medium">React Native</p>
+                </a>
+                <a href="https://www.octalsoftware.com/hire-tensorflow-developers"
+                    class="block bg-white rounded-lg shadow-lg p-4 hover:shadow-xl transform hover:-translate-y-2 transition duration-300">
+                    <div class="flex justify-center mb-4">
+                        <img class=" object-cover	 h-20 w-20" src="images/TensorFlow.png" alt="software-development">
+                    </div>
+                    <p class="text-center font-medium">TensorFlow</p>
+                </a>
+                <a href="https://www.octalsoftware.com/flutter-app-development"
+                    class="block bg-white rounded-lg shadow-lg p-4 hover:shadow-xl transform hover:-translate-y-2 transition duration-300">
+                    <div class="flex justify-center mb-4">
+                        <img class=" object-cover	 h-20 w-20" src="images/flutter.jpg" alt="software-development">
+                    </div>
+                    <p class="text-center font-medium">Flutter</p>
+                </a>
+                <a href="https://www.octalsoftware.com/AngularJS-development-services"
+                    class="block bg-white rounded-lg shadow-lg p-4 hover:shadow-xl transform hover:-translate-y-2 transition duration-300">
+                    <div class="flex justify-center mb-4">
+                        <img class=" object-cover	 h-20 w-20" src="images/anguler.png" alt="software-development">
+                    </div>
+                    <p class="text-center font-medium">Angular</p>
+                </a>
+                <a href="https://www.octalsoftware.com/vue-development-services"
+                    class="block bg-white rounded-lg shadow-lg p-4 hover:shadow-xl transform hover:-translate-y-2 transition duration-300">
+                    <div class="flex justify-center mb-4">
+                        <img class=" object-cover	 h-20 w-20" src="images/vau.png" alt="software-development">
+                    </div>
+                    <p class="text-center font-medium">Vue.JS</p>
+                </a>
+                <a href="https://www.octalsoftware.com/ionic-app-development"
+                    class="block bg-white rounded-lg shadow-lg p-4 hover:shadow-xl transform hover:-translate-y-2 transition duration-300">
+                    <div class="flex justify-center mb-4">
+                        <img class=" object-cover	 h-20 w-20"
+                            src="https://e7.pngegg.com/pngimages/426/603/png-clipart-ionic-new-logo-tech-companies.png"
+                            alt="software-development">
+                    </div>
+                    <p class="text-center font-medium">Ionic</p>
+                </a>
+                <a href="https://www.octalsoftware.com/mean-stack-development"
+                    class="block bg-white rounded-lg shadow-lg p-4 hover:shadow-xl transform hover:-translate-y-2 transition duration-300">
+                    <div class="flex justify-center mb-4">
+                        <img class=" object-cover	 h-20 w-20" src="images/mern-stack.png" alt="software-development">
+                    </div>
+                    <p class="text-center font-medium">MEAN Stack</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Technology Section End -->
+
+    <!-- Testimonial Section Start -->
+    <section class="py-24 bg-[#fffbf9] ">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div
+                class="flex justify-center items-center gap-y-8 lg:gap-y-0 flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between lg:gap-x-8 max-w-sm sm:max-w-2xl lg:max-w-full mx-auto">
+                <div class="w-full lg:w-2/5">
+                    <span class="text-sm text-gray-500 font-medium mb-4 block">Testimonial</span>
+                    <h2 class="text-4xl font-bold text-gray-900 leading-[3.25rem] mb-8">23k+ Customers gave their <span
+                            class=" text-transparent bg-clip-text bg-gradient-to-tr from-indigo-600 to-violet-600">Feedback</span>
+                    </h2>
+                    <!-- Slider controls -->
+                    <div class="flex items-center justify-center lg:justify-start gap-10">
+                        <button id="slider-button-left"
+                            class="swiper-button-prev group flex justify-center items-center border border-solid border-indigo-600 w-12 h-12 transition-all duration-500 rounded-full hover:bg-indigo-600"
+                            data-carousel-prev>
+                            <svg class="h-6 w-6 text-indigo-600 group-hover:text-white" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20.9999 12L4.99992 12M9.99992 6L4.70703 11.2929C4.3737 11.6262 4.20703 11.7929 4.20703 12C4.20703 12.2071 4.3737 12.3738 4.70703 12.7071L9.99992 18"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <button id="slider-button-right"
+                            class="swiper-button-next group flex justify-center items-center border border-solid border-indigo-600 w-12 h-12 transition-all duration-500 rounded-full hover:bg-indigo-600"
+                            data-carousel-next>
+                            <svg class="h-6 w-6 text-indigo-600 group-hover:text-white" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 12L19 12M14 18L19.2929 12.7071C19.6262 12.3738 19.7929 12.2071 19.7929 12C19.7929 11.7929 19.6262 11.6262 19.2929 11.2929L14 6"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="w-full lg:w-3/5">
+                    <!--Slider wrapper-->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+
+                            <div
+                                class="swiper-slide group bg-white border border-solid border-gray-300 rounded-2xl max-sm:max-w-sm max-sm:mx-auto p-6 transition-all duration-500 hover:border-indigo-600">
+                                <div class="flex items-center gap-5 mb-5 sm:mb-9">
+                                    <img class="rounded-full object-cover"
+                                        src="https://pagedone.io/asset/uploads/1696229969.png" alt="avatar">
+                                    <div class="grid gap-1">
+                                        <h5 class="text-gray-900 font-medium transition-all duration-500  ">Jane D</h5>
+                                        <span class="text-sm leading-6 text-gray-500">CEO </span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex items-center mb-5 sm:mb-9 gap-2 text-amber-500 transition-all duration-500  ">
+                                    <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                </div>
+                                <p
+                                    class="text-sm text-gray-500 leading-6 transition-all duration-500 min-h-24  group-hover:text-gray-800">
+                                    The user interface of this pagedone is so intuitive, I was able to start using it
+                                    without any guidance.
+                                </p>
+
+                            </div>
+                            <div
+                                class="swiper-slide group bg-white border border-solid border-gray-300 rounded-2xl max-sm:max-w-sm max-sm:mx-auto p-6 transition-all duration-500 hover:border-indigo-600">
+                                <div class="flex items-center gap-5 mb-5 sm:mb-9">
+                                    <img class="rounded-full object-cover"
+                                        src="	https://pagedone.io/asset/uploads/1696229994.png" alt="avatar">
+                                    <div class="grid gap-1">
+                                        <h5 class="text-gray-900 font-medium transition-all duration-500  ">Harsh P.
+                                        </h5>
+                                        <span class="text-sm leading-6 text-gray-500">Product Designer </span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex items-center mb-5 sm:mb-9 gap-2 text-amber-500 transition-all duration-500  ">
+                                    <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                </div>
+                                <p
+                                    class="text-sm text-gray-500 leading-6 transition-all duration-500 min-h-24 group-hover:text-gray-800">
+                                    I used to dread doing my taxes every year, but pagedone has made the process so much
+                                    simpler and stress-free.
+                                </p>
+
+                            </div>
+                            <div
+                                class="swiper-slide group bg-white border border-solid border-gray-300 rounded-2xl max-sm:max-w-sm max-sm:mx-auto p-6 transition-all duration-500 hover:border-indigo-600">
+                                <div class="flex items-center gap-5 mb-5 sm:mb-9">
+                                    <img class="rounded-full object-cover"
+                                        src="https://pagedone.io/asset/uploads/1696229969.png" alt="avatar">
+                                    <div class="grid gap-1">
+                                        <h5 class="text-gray-900 font-medium transition-all duration-500  ">Jane D</h5>
+                                        <span class="text-sm leading-6 text-gray-500">CEO </span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex items-center mb-5 sm:mb-9 gap-2 text-amber-500 transition-all duration-500  ">
+                                    <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                </div>
+                                <p
+                                    class="text-sm text-gray-500 leading-6 transition-all duration-500 min-h-24 group-hover:text-gray-800">
+                                    The user interface of this pagedone is so intuitive, I was able to start using it
+                                    without any guidance.
+                                </p>
+
+                            </div>
+                            <div
+                                class="swiper-slide group bg-white border border-solid border-gray-300 rounded-2xl max-sm:max-w-sm max-sm:mx-auto p-6 transition-all duration-500 hover:border-indigo-600">
+                                <div class="flex items-center gap-5 mb-5 sm:mb-9">
+                                    <img class="rounded-full object-cover"
+                                        src="	https://pagedone.io/asset/uploads/1696229994.png" alt="avatar">
+                                    <div class="grid gap-1">
+                                        <h5 class="text-gray-900 font-medium transition-all duration-500  ">Harsh P.
+                                        </h5>
+                                        <span class="text-sm leading-6 text-gray-500">Product Designer </span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex items-center mb-5 sm:mb-9 gap-2 text-amber-500 transition-all duration-500  ">
+                                    <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                    <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                </div>
+                                <p
+                                    class="text-sm text-gray-500 leading-6 transition-all duration-500 min-h-24 group-hover:text-gray-800">
+                                    I used to dread doing my taxes every year, but pagedone has made the process so much
+                                    simpler and stress-free.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial Section End -->
+
+    <!-- <div class="christmasTagBox z-50 h-50 w-50">
+        <a href="https://devtechnosys.com/christmas-offers.php">
+          <img class="lazyload  animate-pulse	 h-50 w-40" src="https://devtechnosys.com/images/2021-new/christmas/christmas.png" alt="christmas">
+        </a>
+      </div> -->
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
