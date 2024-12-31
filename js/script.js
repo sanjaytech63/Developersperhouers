@@ -3,7 +3,6 @@ function toggleMenu() {
     menu.classList.toggle('open');
 }
 
-
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 2,
     spaceBetween: 28,
@@ -37,26 +36,16 @@ var swiper = new Swiper(".mySwiper", {
 
 
 const modal = document.getElementById('quoteModal');
-    
-    // Get the button that opens the modal
-    const openModalBtn = document.getElementById('openModal');
-    
-    // Get the button that closes the modal
-    const closeModalBtn = document.getElementById('closeModal');
-    
-    // When the user clicks the button, open the modal
-    openModalBtn.onclick = function () {
-        modal.classList.remove('hidden');
-    };
-    
-    // When the user clicks the close button, close the modal
-    closeModalBtn.onclick = function () {
+const openModalBtn = document.getElementById('openModal');
+const closeModalBtn = document.getElementById('closeModal');
+openModalBtn.onclick = function () {
+    modal.classList.remove('hidden');
+};
+closeModalBtn.onclick = function () {
+    modal.classList.add('hidden');
+};
+window.onclick = function (event) {
+    if (event.target === modal) {
         modal.classList.add('hidden');
-    };
-    
-    // Optional: Close the modal if the user clicks outside the modal content
-    window.onclick = function (event) {
-        if (event.target === modal) {
-            modal.classList.add('hidden');
-        }
-    };
+    }
+};

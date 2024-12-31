@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/tailwind.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Service</title>
+</head>
+
+<body>
+ <!-- Header Section Start -->
+ <header class="bg-[#fffbf9] text-white fixed top-0 left-0 w-full z-50 shadow-md">
+    <div class="container mx-auto px-2">
+        <div class="flex justify-between items-center py-6">
+            <!-- Logo Section -->
+            <div class="logo">
+                <a href="/">
+                    <img src="https://developersperhour.dev/images/header/logo-dark.webp" alt="logo"
+                        class="h-5 sm:h-10 cursor-pointer">
+                </a>
+            </div>
+            <!-- Right Section -->
+            <div class="flex items-center space-x-6">
+                <!-- Email and Phone Box -->
+                <div class="hidden lg:flex space-x-4">
+                    <a href="https://wa.me/919983263662?text=Hello DevelopersPerHour" target="_blank"
+                        title="91-9983263662"
+                        class="flex items-center space-x-2 text-gray-300 hover:text-white cursor-pointer">
+                        <img src="https://developersperhour.dev/images/header/whatsapp.svg" alt="whatsapp"
+                            class="h-10 w-10 object-cover">
+                    </a>
+                    <a
+                        class="flex items-center space-x-2 text-gray-300 hover:text-white  border-[1px] border-[#e8e8e8] px-3 py-2 cursor-pointer">
+                        <img src="https://developersperhour.dev/images/header/mail.svg" alt="mail" class="h-5 w-5">
+                        <span class="text-[#000]">info@developersperhour.dev</span>
+                    </a>
+                    <a
+                        class="flex items-center space-x-2 text-gray-300 hover:text-white border-[1px] border-[#e8e8e8] px-3 py-2 cursor-pointer">
+                        <img src="https://developersperhour.dev/images/header/call.svg" alt="call" class="h-5 w-5">
+                        <span class="text-[#000]">+1 415-992-5493</span>
+                    </a>
+                </div>
+                <!-- Quote Button -->
+                <div>
+                    <a id="openModal"
+                        class="bg-[#f05a23] hover:bg-[#1d2538] text-white py-3 sm:px-3  px-1 text-[12px] sm:text-base  rounded-md cursor-pointer">
+                        Get A Quote </a>
+                </div>
+                <!-- Mobile Menu Toggle -->
+                <div class="menu-toggle cursor-pointer">
+                    <a class="flex flex-col space-y-2" onclick="toggleMenu()">
+                        <span class="block h-1 w-6 sm:w-8 bg-[#1d2538]"></span>
+                        <span class="block h-1 w-6 sm:w-8 bg-[#1d2538]"></span>
+                        <span class="block h-1 w-6 sm:w-8 bg-[#1d2538]"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="menu bg-[#fffbf9] mt-[70px] sm:mt-[90px] ">
+    <nav class=" ">
+        <div class="menu-content-bg bg-[#202336] shadow-lg py-4">
+            <div
+                class="w-full navigation-head flex flex-wrap items-center justify-between px-4 pb-4 border-b-[1px] border-[#33384a] ">
+                <!-- Logo Section -->
+                <div class="w-full md:w-1/4 logo mb-5 md:mb-0">
+                    <a href="/">
+                        <img src="https://developersperhour.dev/images/header/logo.webp" alt="logo"
+                            class="h-8 sm:h-10 cursor-pointer">
+                    </a>
+                </div>
+                <!-- Navigation Section -->
+                <div
+                    class="w-full  md:w-3/4 nav-head-right flex flex-col md:flex-row items-start md:items-center md:justify-between space-y-4 md:space-y-0 md:space-x-4">
+                    <ul class="flex flex-col md:flex-row md:flex-wrap space-y-4 md:space-y-0 md:space-x-4">
+                        <li>
+                            <a class="flex gap-4 items-center text-white">
+                                <i
+                                    class="w-[35px] h-[35px] border-[1px] border-gray-500 rounded-full flex items-center justify-center">🥇</i>
+                                <span>Blog</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex gap-4 items-center text-white">
+                                <i
+                                    class="w-[35px] h-[35px] border-[1px] border-gray-500 rounded-full flex items-center justify-center">☎</i>
+                                <span>+1 415-992-5493</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex gap-4 items-center text-white">
+                                <i
+                                    class="w-[35px] h-[35px] border-[1px] border-gray-500 rounded-full flex items-center justify-center">✉</i>
+                                <span>info@developersperhour.dev</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex gap-4 items-center text-white">
+                                <i
+                                    class="w-[35px] h-[35px] border-[1px] border-gray-500 rounded-full flex items-center justify-center">📝</i>
+                                <span>Request A Quote</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div
+                        class="w-[35px] h-[35px] border-[1px] border-gray-500 rounded-full flex items-center justify-center">
+                        <button onclick="toggleMenu()"
+                            class="text-white text-center   text-2xl cursor-pointer font-bold">&times;</button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-list px-4 py-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="menu-content-box">
+                        <button class="togglebtn  text-xl text-white px-4 py-2 mb-4">Hire Dedicated Team</button>
+                        <ul class="navigation-list space-y-2"
+                            style="border-left: solid 1px #454754; padding-left: 16px;">
+                            <li>
+                                <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Android
+                                    App Developers</a>
+                            </li>
+                            <li>
+                                <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire iPhone
+                                    App Developers</a>
+                            </li>
+                            <li>
+                                <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Hybrid
+                                    Developers</a>
+                            </li>
+                            <li>
+                                <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Dedicated
+                                    Developers</a>
+                            </li>
+                            <li>
+                                <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Front End
+                                    Developers</a>
+                            </li>
+                            <li>
+                                <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Mobile
+                                    App Developers</a>
+                            </li>
+                            <li>
+                                <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Flutter
+                                    Developers</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu-content-box">
+                        <ul class="navigation-list space-y-2"
+                            style="border-left: solid 1px #454754; padding-left: 16px;">
+                            <li>
+                                <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire React
+                                    Native App Developers</a>
+                            </li>
+                            <li>
+                                <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire eCommerce
+                                    App Developers</a>
+                            </li>
+                            <li>
+                                <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Web
+                                    Developers</a>
+                            </li>
+                            <li>
+                                <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Full
+                                    Stack Developers</a>
+                            </li>
+                            <li>
+                                <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">IT Staffing
+                                    Solutions</a>
+                            </li>
+                            <li>
+                                <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Software
+                                    Developers</a>
+                            </li>
+                            <li>
+                                <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Xamarin
+                                    Developers</a>
+                            </li>
+                            <li>
+                                <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Mobile
+                                    App Designers</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu-content-box">
+                        <ul class="navigation-list space-y-2"
+                            style="border-left: solid 1px #454754; padding-left: 16px;">
+                            <li>
+                                <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Python
+                                    Developers</a>
+                            </li>
+                            <li>
+                                <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire PHP
+                                    Developers</a>
+                            </li>
+                            <li>
+                                <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Dot Net
+                                    Developers</a>
+                            </li>
+                            <li>
+                                <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Offshore
+                                    Developers</a>
+                            </li>
+                            <li>
+                                <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Node.JS
+                                    Developers</a>
+                            </li>
+                            <li>
+                                <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Indian
+                                    Developers</a>
+                            </li>
+                            <li>
+                                <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire On Demand
+                                    App Developers</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu-content-box">
+                        <button class="togglebtn  px-4 py-2 text-xl text-white mb-4">Company</button>
+                        <ul class="navigation-list space-y-2"
+                            style="border-left: solid 1px #454754; padding-left: 16px;">
+                            <li>
+                                <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Award</a>
+                            </li>
+                            <li>
+                                <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">FAQ</a>
+                            </li>
+                            <li>
+                                <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">About Us</a>
+                            </li>
+                            <li>
+                                <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+<!-- Header Section End -->
+
+    <!-- Main Section Start -->
+    <div class="relative overflow-hidden bg-gray-900 pt-32 pb-24 space-y-24">
+        <div class="relative">
+            <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8 ">
+                <div class="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0 ">
+
+                    <div>
+                        <div>
+                            <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-pink-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true"
+                                    class="h-8 w-8 text-white">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z">
+                                    </path>
+                                </svg>
+                            </span>
+                        </div>
+
+                        <div class="mt-6">
+                            <h2 class="text-3xl font-bold tracking-tight text-white">
+                                Natural Language Processing (NLP):
+                            </h2>
+                            <p class="mt-4 text-lg text-gray-300">
+                                The AI product utilizes advanced NLP algorithms to understand and interpret human
+                                language,
+                                enabling it to accurately process and analyze text-based inputs.
+                            </p>
+                            <div class="mt-6">
+                                <a class="inline-flex rounded-lg bg-pink-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-pink-600 hover:bg-pink-700 hover:ring-pink-700"
+                                    href="/login">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 sm:mt-16 lg:mt-0">
+                    <div class="-mr-48 pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
+                        <img loading="lazy" width="647" height="486"
+                            class="w-full rounded-xl shadow-2xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+                            style="color:transparent"
+                            src="https://images.unsplash.com/photo-1569144157591-c60f3f82f137">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="relative">
+            <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8 ">
+                <div class="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0 lg:col-start-2">
+                    <div>
+                        <div>
+                            <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-pink-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true"
+                                    class="h-8 w-8 text-white">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z">
+                                    </path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="mt-6">
+                            <h2 class="text-3xl font-bold tracking-tight text-white">
+                                Sentiment Analysis:
+                            </h2>
+                            <p class="mt-4 text-lg text-gray-300">
+                                The product has built-in sentiment analysis capabilities, allowing it to determine the
+                                sentiment (positive, negative, or neutral) expressed in text or customer feedback.
+                            </p>
+                            <div class="mt-6">
+                                <a class="inline-flex rounded-lg bg-pink-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-pink-600 hover:bg-pink-700 hover:ring-pink-700"
+                                    href="/login">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 sm:mt-16 lg:mt-0">
+                    <div class="-ml-48 pr-6 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0">
+                        <img alt="Inbox user interface" loading="lazy" width="647" height="486"
+                            class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
+                            style="color:transparent"
+                            src="https://images.unsplash.com/photo-1599134842279-fe807d23316e">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="relative">
+            <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8 ">
+                <div class="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0 ">
+                    <div>
+                        <div>
+                            <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-pink-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true"
+                                    class="h-8 w-8 text-white">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z">
+                                    </path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="mt-6">
+                            <h2 class="text-3xl font-bold tracking-tight text-white">
+                                Natural Language Generation (NLG):
+                            </h2>
+                            <p class="mt-4 text-lg text-gray-300">
+                                The AI product can generate human-like written content, summaries, or reports based on
+                                structured data or analysis results.
+                            </p>
+                            <div class="mt-6">
+                                <a class="inline-flex rounded-lg bg-pink-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-pink-600 hover:bg-pink-700 hover:ring-pink-700"
+                                    href="/login">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 sm:mt-16 lg:mt-0">
+                    <div class="-mr-48 pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
+                        <img loading="lazy" width="646" height="485"
+                            class="w-full rounded-xl shadow-2xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+                            style="color:transparent"
+                            src="https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main Section End -->
+
+    <section id="testimonies" class="py-24   bg-slate-900">
+        <div class="max-w-6xl mx-8 md:mx-10 lg:mx-20 xl:mx-auto">
+    
+    
+            <div class="transition duration-500 ease-in-out transform scale-100 translate-x-0 translate-y-0 opacity-100">
+                <div class="mb-12 space-y-5 md:mb-16 md:text-center">
+                    <div
+                        class="inline-block px-3 py-1 text-sm font-semibold text-indigo-100 rounded-lg md:text-center text-cn bg-[#202c47] bg-opacity-60 hover:cursor-pointer hover:bg-opacity-40">
+                        Words from Others
+                    </div>
+                    <h1 class="mb-5 text-3xl font-semibold text-white md:text-center md:text-5xl">
+                        It's not just us.
+                    </h1>
+                    <p class="text-xl text-gray-100 md:text-center md:text-2xl">
+                        Here's what others have to say about us.
+                    </p>
+                </div>
+            </div>
+    
+    
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+    
+    
+                <ul class="space-y-8">
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                            <div
+                                class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                            </div><a href="https://twitter.com/kanyewest" class="cursor-pointer">
+                                <div
+                                    class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img
+                                            src="https://pbs.twimg.com/profile_images/1276461929934942210/cqNhNk6v_400x400.jpg"
+                                            class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Kanye West">
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-white">Kanye West</h3>
+                                            <p class="text-gray-500 text-md">Rapper &amp; Entrepreneur</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal text-gray-300 text-md">Find God.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                            <div
+                                class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                            </div><a href="https://twitter.com/tim_cook" class="cursor-pointer">
+                                <div
+                                    class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img
+                                            src="https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg"
+                                            class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Tim Cook">
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-white">Tim Cook</h3>
+                                            <p class="text-gray-500 text-md">CEO of Apple</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal text-gray-300 text-md">Diam quis enim lobortis scelerisque
+                                        fermentum dui faucibus in ornare. Donec pretium vulputate sapien nec sagittis
+                                        aliquam malesuada bibendum.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                            <div
+                                class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                            </div><a href="https://twitter.com/kanyewest" class="cursor-pointer">
+                                <div
+                                    class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img
+                                            src="https://pbs.twimg.com/profile_images/1276461929934942210/cqNhNk6v_400x400.jpg"
+                                            class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Kanye West">
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-white">Kanye West</h3>
+                                            <p class="text-gray-500 text-md">Rapper &amp; Entrepreneur</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal text-gray-300 text-md">Find God.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                            <div
+                                class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                            </div><a href="https://twitter.com/tim_cook" class="cursor-pointer">
+                                <div
+                                    class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img
+                                            src="https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg"
+                                            class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Tim Cook">
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-white">Tim Cook</h3>
+                                            <p class="text-gray-500 text-md">CEO of Apple</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal text-gray-300 text-md">Diam quis enim lobortis scelerisque
+                                        fermentum dui faucibus in ornare. Donec pretium vulputate sapien nec sagittis
+                                        aliquam malesuada bibendum.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+    
+    
+                <ul class="hidden space-y-8 sm:block">
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                            <div
+                                class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                            </div><a href="https://twitter.com/paraga" class="cursor-pointer">
+                                <div
+                                    class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img
+                                            src="https://pbs.twimg.com/profile_images/1375285353146327052/y6jeByyD_400x400.jpg"
+                                            class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Parag Agrawal">
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-white">Parag Agrawal</h3>
+                                            <p class="text-gray-500 text-md">CEO of Twitter</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal text-gray-300 text-md">Enim neque volutpat ac tincidunt vitae
+                                        semper. Mattis aliquam faucibus purus in massa tempor. Neque vitae tempus quam
+                                        pellentesque nec. Turpis cursus in hac habitasse platea dictumst.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                            <div
+                                class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                            </div><a href="https://twitter.com/tim_cook" class="cursor-pointer">
+                                <div
+                                    class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img
+                                            src="https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg"
+                                            class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Tim Cook">
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-white">Tim Cook</h3>
+                                            <p class="text-gray-500 text-md">CEO of Apple</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal text-gray-300 text-md">Diam quis enim lobortis scelerisque
+                                        fermentum dui faucibus in ornare. Donec pretium vulputate sapien nec sagittis
+                                        aliquam malesuada bibendum.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                            <div
+                                class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                            </div><a href="https://twitter.com/paraga" class="cursor-pointer">
+                                <div
+                                    class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img
+                                            src="https://pbs.twimg.com/profile_images/1375285353146327052/y6jeByyD_400x400.jpg"
+                                            class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Parag Agrawal">
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-white">Parag Agrawal</h3>
+                                            <p class="text-gray-500 text-md">CEO of Twitter</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal text-gray-300 text-md">Enim neque volutpat ac tincidunt vitae
+                                        semper. Mattis aliquam faucibus purus in massa tempor. Neque vitae tempus quam
+                                        pellentesque nec. Turpis cursus in hac habitasse platea dictumst.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                            <div
+                                class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                            </div><a href="https://twitter.com/tim_cook" class="cursor-pointer">
+                                <div
+                                    class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img
+                                            src="https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg"
+                                            class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Tim Cook">
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-white">Tim Cook</h3>
+                                            <p class="text-gray-500 text-md">CEO of Apple</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal text-gray-300 text-md">Diam quis enim lobortis scelerisque
+                                        fermentum dui faucibus in ornare. Donec pretium vulputate sapien nec sagittis
+                                        aliquam malesuada bibendum.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+    
+    
+                <ul class="hidden space-y-8 lg:block">
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                            <div
+                                class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                            </div><a href="https://twitter.com/satyanadella" class="cursor-pointer">
+                                <div
+                                    class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img
+                                            src="https://pbs.twimg.com/profile_images/1221837516816306177/_Ld4un5A_400x400.jpg"
+                                            class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Satya Nadella">
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-white">Satya Nadella</h3>
+                                            <p class="text-gray-500 text-md">CEO of Microsoft</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal text-gray-300 text-md">Tortor dignissim convallis aenean et
+                                        tortor at. At ultrices mi tempus imperdiet nulla malesuada. Id cursus metus aliquam
+                                        eleifend mi. Quis ipsum suspendisse ultrices gravida dictum fusce ut.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                            <div
+                                class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                            </div><a href="https://twitter.com/dan_schulman" class="cursor-pointer">
+                                <div
+                                    class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img
+                                            src="https://pbs.twimg.com/profile_images/516916920482672641/3jCeLgFb_400x400.jpeg"
+                                            class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Dan Schulman">
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-white">Dan Schulman</h3>
+                                            <p class="text-gray-500 text-md">CEO of PayPal</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal text-gray-300 text-md">Quam pellentesque nec nam aliquam sem
+                                        et tortor consequat id. Enim sit amet venenatis urna cursus.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                            <div
+                                class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                            </div><a href="https://twitter.com/satyanadella" class="cursor-pointer">
+                                <div
+                                    class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img
+                                            src="https://pbs.twimg.com/profile_images/1221837516816306177/_Ld4un5A_400x400.jpg"
+                                            class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Satya Nadella">
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-white">Satya Nadella</h3>
+                                            <p class="text-gray-500 text-md">CEO of Microsoft</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal text-gray-300 text-md">Tortor dignissim convallis aenean et
+                                        tortor at. At ultrices mi tempus imperdiet nulla malesuada. Id cursus metus aliquam
+                                        eleifend mi. Quis ipsum suspendisse ultrices gravida dictum fusce ut.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                            <div
+                                class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                            </div><a href="https://twitter.com/dan_schulman" class="cursor-pointer">
+                                <div
+                                    class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img
+                                            src="https://pbs.twimg.com/profile_images/516916920482672641/3jCeLgFb_400x400.jpeg"
+                                            class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Dan Schulman">
+                                        <div>
+                                            <h3 class="text-lg font-semibold text-white">Dan Schulman</h3>
+                                            <p class="text-gray-500 text-md">CEO of PayPal</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal text-gray-300 text-md">Quam pellentesque nec nam aliquam sem
+                                        et tortor consequat id. Enim sit amet venenatis urna cursus.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+    
+    
+            </div>
+        </div>
+    </section>
+  
+    <div class="bg-gray-900 p-4 min-h-screen">
+        <div aria-hidden="true" class="absolute inset-0 h-max w-full m-auto grid grid-cols-2 -space-x-52 opacity-20">
+            <div class="blur-[106px] h-56 bg-gradient-to-br  to-purple-400 from-blue-700"></div>
+            <div class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400  to-indigo-600"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+            <div class="md:w-2/3 lg:w-1/2 mt-12 text-gray-100">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="w-6 h-6 text-secondary">
+                    <path fill-rule="evenodd"
+                        d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5zM18 1.5a.75.75 0 01.728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 010 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 01-1.456 0l-.258-1.036a2.625 2.625 0 00-1.91-1.91l-1.036-.258a.75.75 0 010-1.456l1.036-.258a2.625 2.625 0 001.91-1.91l.258-1.036A.75.75 0 0118 1.5zM16.5 15a.75.75 0 01.712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 010 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 01-1.422 0l-.395-1.183a1.5 1.5 0 00-.948-.948l-1.183-.395a.75.75 0 010-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0116.5 15z"
+                        clip-rule="evenodd"></path>
+                </svg>
+                <h2 class="my-8 text-2xl font-bold text-white md:text-4xl">Our Work</h2>
+                <p class="text-gray-300">We have built many products and some of them are below</p>
+            </div>
+            <div
+                class="mt-16 grid divide-x divide-y  divide-gray-700 overflow-hidden  rounded-3xl border text-gray-600 border-gray-700 sm:grid-cols-2 lg:grid-cols-4  lg:divide-y-0 xl:grid-cols-4">
+                <div
+                    class="group relative bg-gray-800 transition hover:z-[1] hover:shadow-2xl  hover:shadow-gray-600/10">
+                    <div class="relative space-y-8 py-12 p-8">
+                        <img src="https://www.svgrepo.com/show/164986/logo.svg" loading="lazy" width="200" height="200"
+                            class="w-12 h-12 rounded-full" style="color:transparent">
+                        <div class="space-y-2">
+                            <h5 class="text-xl font-semibold text-white transition group-hover:text-secondary">Xyz.com
+                            </h5>
+                            <p class="text-gray-300">Platform to convert Domains into Content websites.</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="group relative bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+                    <div class="relative space-y-8 py-12 p-8">
+                        <img src="https://www.svgrepo.com/show/120853/logo.svg" loading="lazy" width="200" height="200"
+                            class="w-12 h-12 rounded-full" style="color:transparent">
+                        <div class="space-y-2">
+                            <h5 class="text-xl font-semibold text-white transition group-hover:text-secondary">ABC.com
+                            </h5>
+                            <p class="text-gray-300">Platform to create dynamic widgets for websites.</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="group relative bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+                    <div class="relative space-y-8 py-12 p-8">
+                        <img src="https://www.svgrepo.com/show/120852/logo.svg" loading="lazy" width="200" height="200"
+                            class="w-12 h-12 rounded-full" style="color:transparent">
+                        <div class="space-y-2">
+                            <h5 class="text-xl font-semibold text-white transition group-hover:text-secondary">ASD.com
+                            </h5>
+                            <p class="text-gray-300">API SaaS Platform that provides API Suit to help you ship fast.</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="group relative bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+                    <div class="relative space-y-8 py-12 p-8">
+                        <img src="https://www.svgrepo.com/show/120850/logo.svg" loading="lazy" width="200" height="200"
+                            class="w-12 h-12 rounded-full" style="color:transparent">
+                        <div class="space-y-2">
+                            <h5 class="text-xl font-semibold text-white transition group-hover:text-secondary">TMK.co
+                            </h5>
+                            <p class="text-gray-300">Chrome Extension that lets you add ChatGPT on any website</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- script goes here -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/js/script.js"></script>
+    <!-- script goes end here -->
+
+</body>
+
+</html>

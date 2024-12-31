@@ -4,7 +4,9 @@
 
 
 /* css/style.css */
-
+html {
+    scroll-behavior: smooth;
+  }
 /* menu toggle css */
 
 .menu {
@@ -69,7 +71,6 @@
 
 }
 
- /* Optional smooth transition for modal */
  #quoteModal {
     transition: opacity 0.3s ease, visibility 0.3s ease;
     visibility: hidden;
@@ -81,16 +82,38 @@
     opacity: 1;
 }
 
-/* Smooth scrolling for modal content */
+
 .modal-content {
-    max-height: 80vh; /* Ensure the modal doesn't exceed 80% of the viewport height */
-    overflow-y: auto; /* Enable vertical scrolling if the content overflows */
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS devices */
+    max-height: 80vh;
+    overflow-y: auto; 
+    -webkit-overflow-scrolling: touch; 
 }
 
-/* Optional: Adding padding for mobile */
 @media (max-width: 768px) {
     .modal-content {
-        padding: 16px;
+       
     }
+}
+
+
+.modal-content {
+    max-height: 100vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+      
+        height: calc(100vh - 2rem);
+    }   
+}
+
+.form-input:focus {
+    outline: 2px solid #ff5c2b;
+    border-color: #ff5c2b;
+}
+
+.btn:hover {
+    background-color: #ff4411;
 }
