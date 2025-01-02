@@ -3,7 +3,8 @@ function toggleMenu() {
     menu.classList.toggle('open');
 }
 
-var swiper = new Swiper(".mySwiper", {
+
+const swiper = new Swiper(".mySwiper", {
     slidesPerView: 2,
     spaceBetween: 28,
     centeredSlides: false,
