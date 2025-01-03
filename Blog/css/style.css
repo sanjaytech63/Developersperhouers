@@ -117,5 +117,4 @@ html {
     overflow-y: auto; 
     max-height: calc(100vh); 
     -webkit-overflow-scrolling: touch;
-    margin-bottom: 50px;
 }
