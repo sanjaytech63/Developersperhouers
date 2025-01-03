@@ -17,7 +17,6 @@ html {
     display: block;
 }
 
-
 /* testmonial css */
 .swiper-button-prev:after,
 .swiper-rtl .swiper-button-next:after {
@@ -63,12 +62,10 @@ html {
     animation: move 1s infinite alternate;
 }
 
-
 .octal-img {
     width: 275px;
     height: 100px;
     object-fit: fill;
-
 }
 
  #quoteModal {
@@ -82,19 +79,11 @@ html {
     opacity: 1;
 }
 
-
 .modal-content {
     max-height: 80vh;
     overflow-y: auto; 
     -webkit-overflow-scrolling: touch; 
 }
-
-@media (max-width: 768px) {
-    .modal-content {
-       
-    }
-}
-
 
 .modal-content {
     max-height: 100vh;
@@ -119,3 +108,14 @@ html {
 }
 
 
+#mobile-menu {
+    overflow-y: auto; 
+    max-height: 100vh; 
+    -webkit-overflow-scrolling: touch; 
+}
+.menu-content-bg {
+    overflow-y: auto; 
+    max-height: calc(100vh); 
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 50px;
+}

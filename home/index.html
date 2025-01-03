@@ -66,188 +66,212 @@
                 </div>
             </div>
         </div>
-         <!-- Mobile Menu -->
-    <div id="mobile-menu" class="menu bg-white ">
-        <nav class=" ">
-            <div class="menu-content-bg bg-[#202336] shadow-lg py-4">
-                <div
-                       class="w-full navigation-head flex flex-wrap items-center justify-between px-4 pb-4 border-b-[1px] border-[#33384a] ">
-                    <!-- Logo Section -->
-                    <div class="w-full md:w-1/4 logo mb-5 md:mb-0">
-                        <a href="/">
-                            <img src="https://developersperhour.dev/images/header/logo.webp" alt="logo"
-                                class="h-8 sm:h-10 cursor-pointer">
-                        </a>
-                    </div>
-                    <!-- Navigation Section -->
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="menu bg-white ">
+            <nav class=" ">
+                <div class="menu-content-bg bg-[#202336] shadow-lg py-4">
                     <div
-                        class="w-full  md:w-3/4 nav-head-right flex flex-col md:flex-row items-start md:items-center md:justify-between space-y-4 md:space-y-0 md:space-x-4">
-                        <ul class="flex flex-col md:flex-row md:flex-wrap space-y-4 md:space-y-0 md:space-x-4">
-                            <li>
-                                <a class="flex gap-4 items-center text-white">
-                                    <i
-                                        class="w-[35px] h-[35px] border-[1px] border-gray-500 rounded-full flex items-center justify-center">🥇</i>
-                                    <span>Blog</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="flex gap-4 items-center text-white">
-                                    <i
-                                        class="w-[35px] h-[35px] border-[1px] border-gray-500 rounded-full flex items-center justify-center">☎</i>
-                                    <span>+1 415-992-5493</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="flex gap-4 items-center text-white">
-                                    <i
-                                        class="w-[35px] h-[35px] border-[1px] border-gray-500 rounded-full flex items-center justify-center">✉</i>
-                                    <span>info@developersperhour.dev</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="flex gap-4 items-center text-white">
-                                    <i
-                                        class="w-[35px] h-[35px] border-[1px] border-gray-500 rounded-full flex items-center justify-center">📝</i>
-                                    <span>Request A Quote</span>
-                                </a>
-                            </li>
-                        </ul>
+                        class="w-full navigation-head flex flex-wrap items-center justify-between px-4 pb-4 border-b-[1px] border-[#33384a] ">
+                        <!-- Logo Section -->
+                        <div class="w-full md:w-1/4 flex items-center justify-between logo mb-5 md:mb-0">
+                            <a href="/">
+                                <img src="https://developersperhour.dev/images/header/logo.webp" alt="logo"
+                                    class="h-8 sm:h-10 cursor-pointer">
+                            </a>
+                            <div class="w-[35px] h-[35px] block sm:hidden  flex items-center justify-center">
+                                <button onclick="toggleMenu()"
+                                    class="text-white text-center text-2xl cursor-pointer font-bold">&times;</button>
+                            </div>
+                        </div>
+                        <!-- Navigation Section -->
                         <div
-                            class="w-[35px] h-[35px] border-[1px] border-gray-500 rounded-full flex items-center justify-center">
-                            <button onclick="toggleMenu()"
-                                class="text-white text-center   text-2xl cursor-pointer font-bold">&times;</button>
+                            class="w-full  md:w-3/4 nav-head-right flex flex-col md:flex-row items-start md:items-center md:justify-between space-y-4 md:space-y-0 md:space-x-4">
+                            <ul class="flex flex-col md:flex-row md:flex-wrap space-y-4 md:space-y-0 md:space-x-4">
+                                <li>
+                                    <a class="flex gap-4 items-center text-white">
+                                        <i
+                                            class="w-[35px] h-[35px] border-[1px] border-gray-500 rounded-full flex items-center justify-center">🥇</i>
+                                        <span>Blog</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex gap-4 items-center text-white">
+                                        <i
+                                            class="w-[35px] h-[35px] border-[1px] border-gray-500 rounded-full flex items-center justify-center">☎</i>
+                                        <span>+1 415-992-5493</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex gap-4 items-center text-white">
+                                        <i
+                                            class="w-[35px] h-[35px] border-[1px] border-gray-500 rounded-full flex items-center justify-center">✉</i>
+                                        <span>info@developersperhour.dev</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex gap-4 items-center text-white">
+                                        <i
+                                            class="w-[35px] h-[35px] border-[1px] border-gray-500 rounded-full flex items-center justify-center">📝</i>
+                                        <span>Request A Quote</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="w-[35px] h-[35px]  hidden sm:block  flex items-center justify-center">
+                                <button onclick="toggleMenu()"
+                                    class="text-white text-center   text-2xl cursor-pointer font-bold">&times;</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-list px-4 py-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                            <div class="menu-content-box">
+                                <button class="togglebtn  text-xl text-white px-4 py-2 mb-4">Hire Dedicated
+                                    Team</button>
+                                <ul class="navigation-list space-y-2"
+                                    style="border-left: solid 1px #454754; padding-left: 16px;">
+                                    <li>
+                                        <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
+                                            Android
+                                            App Developers</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
+                                            iPhone
+                                            App Developers</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
+                                            Hybrid
+                                            Developers</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
+                                            Dedicated
+                                            Developers</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Front
+                                            End
+                                            Developers</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
+                                            Mobile
+                                            App Developers</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
+                                            Flutter
+                                            Developers</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="menu-content-box">
+                                <ul class="navigation-list space-y-2"
+                                    style="border-left: solid 1px #454754; padding-left: 16px;">
+                                    <li>
+                                        <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire React
+                                            Native App Developers</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
+                                            eCommerce
+                                            App Developers</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Web
+                                            Developers</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Full
+                                            Stack Developers</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">IT
+                                            Staffing
+                                            Solutions</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
+                                            Software
+                                            Developers</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
+                                            Xamarin
+                                            Developers</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
+                                            Mobile
+                                            App Designers</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="menu-content-box">
+                                <ul class="navigation-list space-y-2"
+                                    style="border-left: solid 1px #454754; padding-left: 16px;">
+                                    <li>
+                                        <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
+                                            Python
+                                            Developers</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire PHP
+                                            Developers</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Dot
+                                            Net
+                                            Developers</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
+                                            Offshore
+                                            Developers</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
+                                            Node.JS
+                                            Developers</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire
+                                            Indian
+                                            Developers</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire On
+                                            Demand
+                                            App Developers</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="menu-content-box">
+                                <button class="togglebtn  px-4 py-2 text-xl text-white mb-4">Company</button>
+                                <ul class="navigation-list space-y-2"
+                                    style="border-left: solid 1px #454754; padding-left: 16px;">
+                                    <li>
+                                        <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Award</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">FAQ</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">About
+                                            Us</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Contact
+                                            Us</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="menu-list px-4 py-6">
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                        <div class="menu-content-box">
-                            <button class="togglebtn  text-xl text-white px-4 py-2 mb-4">Hire Dedicated Team</button>
-                            <ul class="navigation-list space-y-2"
-                                style="border-left: solid 1px #454754; padding-left: 16px;">
-                                <li>
-                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Android
-                                        App Developers</a>
-                                </li>
-                                <li>
-                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire iPhone
-                                        App Developers</a>
-                                </li>
-                                <li>
-                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Hybrid
-                                        Developers</a>
-                                </li>
-                                <li>
-                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Dedicated
-                                        Developers</a>
-                                </li>
-                                <li>
-                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Front End
-                                        Developers</a>
-                                </li>
-                                <li>
-                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Mobile
-                                        App Developers</a>
-                                </li>
-                                <li>
-                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Flutter
-                                        Developers</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="menu-content-box">
-                            <ul class="navigation-list space-y-2"
-                                style="border-left: solid 1px #454754; padding-left: 16px;">
-                                <li>
-                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire React
-                                        Native App Developers</a>
-                                </li>
-                                <li>
-                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire eCommerce
-                                        App Developers</a>
-                                </li>
-                                <li>
-                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Web
-                                        Developers</a>
-                                </li>
-                                <li>
-                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Full
-                                        Stack Developers</a>
-                                </li>
-                                <li>
-                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">IT Staffing
-                                        Solutions</a>
-                                </li>
-                                <li>
-                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Software
-                                        Developers</a>
-                                </li>
-                                <li>
-                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Xamarin
-                                        Developers</a>
-                                </li>
-                                <li>
-                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Mobile
-                                        App Designers</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="menu-content-box">
-                            <ul class="navigation-list space-y-2"
-                                style="border-left: solid 1px #454754; padding-left: 16px;">
-                                <li>
-                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Python
-                                        Developers</a>
-                                </li>
-                                <li>
-                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire PHP
-                                        Developers</a>
-                                </li>
-                                <li>
-                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Dot Net
-                                        Developers</a>
-                                </li>
-                                <li>
-                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Offshore
-                                        Developers</a>
-                                </li>
-                                <li>
-                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Node.JS
-                                        Developers</a>
-                                </li>
-                                <li>
-                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire Indian
-                                        Developers</a>
-                                </li>
-                                <li>
-                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Hire On Demand
-                                        App Developers</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="menu-content-box">
-                            <button class="togglebtn  px-4 py-2 text-xl text-white mb-4">Company</button>
-                            <ul class="navigation-list space-y-2"
-                                style="border-left: solid 1px #454754; padding-left: 16px;">
-                                <li>
-                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Award</a>
-                                </li>
-                                <li>
-                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">FAQ</a>
-                                </li>
-                                <li>
-                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">About Us</a>
-                                </li>
-                                <li>
-                                    <a class="text-[#d9d9d9] text-sm hover:text-[#f05a23] cursor-pointer">Contact Us</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </div>
+            </nav>
+        </div>
     </header>
     <!-- Header Section End -->
     <!-- Main Section Start -->
@@ -847,15 +871,15 @@
 
     <div id="quoteModal" class="fixed  modal-content
         z-50 inset-0 bg-black bg-opacity-80 top-0 left-0 w-full h-full flex justify-center items-center hidden">
-        <div class="bg-white sm:px-8 px-4 py-6 rounded-lg shadow-lg w-full max-w-4xl">
-            <div class="flex justify-end items-center mb-2 ">
+        <div class="bg-white sm:px-8 px-4 py-6 mt-80 sm:mt-0 sm:rounded-lg shadow-lg w-full max-w-4xl">
+            <div class="flex justify-end items-center mb-2  ">
                 <button id="closeModal" class="text-xl text-gray-500">X</button>
             </div>
 
             <!-- Modal Content (Left and Right Sections) -->
             <div class="grid md:grid-cols-2 gap-12">
                 <!-- Left Section (Awards and Carousel) -->
-                <div class="flex flex-col px-[40px] justify-center bg-[#070606] rounded-lg">
+                <div class="flex flex-col px-[40px] justify-center bg-[#070606] hidden sm:block  rounded-lg">
                     <div class="text-center text-white md:text-left">
                         <h2 class="text-3xl font-semibold mb-4 mt-5">Request a Quote and Save on Next Purchase!</h2>
                         <p class="text-sm text-[#dadada] mb-6">Are you looking for an affordable solution for your
@@ -875,10 +899,7 @@
                         </ul>
                     </div>
 
-                    <!-- Carousel Section -->
-                    <div class="owl-carousel owl-theme">
-                        <!-- Add Owl Carousel content here -->
-                    </div>
+
                 </div>
 
                 <!-- Right Section (Form) -->
@@ -886,7 +907,7 @@
                     <h2 class="text-xl font-semibold mb-6 text-center">Build A Positive Relationship With A Successful
                         Outcome.</h2>
 
-                    <form id="validateForm" action="submit.php" enctype="multipart/form-data">
+                    <form>
                         <div class="grid md:grid-cols-2 gap-6">
                             <!-- Name and Email -->
                             <div class="form-group">
